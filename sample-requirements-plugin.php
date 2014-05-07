@@ -24,7 +24,7 @@ function sample_requirements_plugin_main() {
     $plugin->enable();
   } else {
     $plugin = new FauxPlugin('Sample Requirements Plugin', $requirements->getResults());
-    $plugin->enable(__FILE__);
+    $plugin->activate(__FILE__);
   }
 }
 
